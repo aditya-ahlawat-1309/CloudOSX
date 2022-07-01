@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {motion} from "framer-motion";
-import { NavLink } from 'react-router-dom'
+import { NavLink, useHistory } from "react-router-dom";
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
@@ -9,6 +9,9 @@ import { PowerBtn, YinYang } from './AllSvgs'
 import Intro from './Intro'
 import { DarkTheme } from './Themes';
 import BottomBar2 from '../OSX/components/BottomBar/BottomBar';
+
+
+
 
 const MainContainer = styled.div`
 background: ${props => props.theme.text};
@@ -171,8 +174,8 @@ const Power = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(0, 255, 0, 0.4);
-    box-shadow: 0 0 8px 6px rgba(0, 255, 0, 0.2);
+    background-color: rgba(255, 0, 0, 0.9);
+    box-shadow: 0 0 8px 6px rgba(255 , 0, 0,1);
   }
 
   & > *:first-child {
@@ -183,14 +186,13 @@ const Power = styled.button`
 
 const Main = () => {
 
-    const [click, setClick] = useState(false);
+    const [click, setClick] = useState(true);
 
-    const handleClick = () => setClick(!click);
+    const handleClick = () => setClick(click);
 
     const [clickLogo, setClickLogo] = useState(false);
 
     const handleClickLogo = () => setClickLogo(!clickLogo);
-
 
   return (
     <MainContainer>
@@ -198,15 +200,39 @@ const Main = () => {
 
       <Container>
         <Power>
-          <NavLink to="/" clickLogo={clickLogo}>
-            <PowerBtn
-              onClick={() => handleClickLogo()}
-              width={30}
-              height={30}
-              fill="currentColor"
-            />
-          </NavLink>
+          {/* <NavLink to="/" clickLogo={clickLogo}> */}
+          <PowerBtn
+            onClick={() => handleClickLogo()}
+            width={30}
+            height={30}
+            fill="currentColor"
+          />
+          {/* </NavLink> */}
         </Power>
+        <div style={{ dipslay: "flex" }}>
+          <h2
+            style={{
+              position: "absolute",
+              top: "10%",
+              left: "44.5%",
+              color: "white",
+              zIndex: "10",
+            }}
+          >
+            Mac OS 
+          </h2>
+          <h2
+            style={{
+              position: "absolute",
+              top: "10%",
+              left: "50.25%",
+              color: "black",
+              zIndex: "10",
+            }}
+          >
+             X Start
+          </h2>
+        </div>
         <LogoComponent theme={click ? "dark" : "light"} />
         <SocialIcons theme={click ? "dark" : "light"} />
 
@@ -241,13 +267,13 @@ const Main = () => {
           </motion.h2>
         </Contact>
 
-        <Blog to="/">
+        <Blog to="#">
           <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             Blog
           </motion.h2>
         </Blog>
 
-        <Work to="/" click={click}>
+        <Work to="#" click={click}>
           <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             Work
           </motion.h2>
@@ -260,7 +286,7 @@ const Main = () => {
             </motion.h2>
           </About>
 
-          <Skill to="/">
+          <Skill to="#">
             <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               My Skills.
             </motion.h2>
@@ -268,7 +294,7 @@ const Main = () => {
         </BottomBar>
       </Container>
       {click ? <Intro /> : null}
-      {clickLogo ? <BottomBar2/> : null}
+      {clickLogo ? <BottomBar2 /> : null}
     </MainContainer>
   );
 }

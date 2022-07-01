@@ -2,17 +2,18 @@
 import finder from "../../Media/finder.png";
 import images from "../../Media/images.png";
 import projects from "../../Media/Projects.png";
-import notes from "../../Media/notes.png";
+import notes from "../../Media/todoAppLogo.png";
 import Dictionary from "../../Media/Dictionary.png"
 import Achievements from "../../Media/Achievements.png"
 import Music from "../../Media/Music.png"
-import Chat from "../../Media/Chat.png"
+import Chat from "../../Media/whatsapp.png"
 import Netflix from "../../Media/Netflix.png"
 import Passlock from "../../Media/Passlock.png"
 import Search from  "../../Media/Search.png"
 import Game from "../../Media/Game.png"
 import Git from "../../Media/github.png"
 import Weather from "../../Media/weather.png"
+import NASA from "../../Media/NASA.png"
 import "./Icons.css"
 
 const Icons = () => {
@@ -25,10 +26,10 @@ const Icons = () => {
           zIndex: 1,
           display: "flex",
           color: "white",
-          zIndex:"7",
+          zIndex: "7",
         }}
       >
-        <a
+        {/* <a
           style={{
             backgroundColor: "Transparent",
             border: "none",
@@ -140,30 +141,6 @@ const Icons = () => {
         >
           <div style={{ flexDirection: "column" }}>
             <img
-              src={Achievements}
-              width="75px"
-              height="75px"
-              style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
-              class="Icons-animation"
-            />
-            <p>Achievement</p>
-          </div>
-        </button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button
-          style={{
-            backgroundColor: "Transparent",
-            border: "none",
-            cursor: "pointer",
-            outline: "none",
-            color: "red",
-            textDecoration: "none",
-            fontWeight: "bold",
-            marginRight: "1.5%",
-          }}
-        >
-          <div style={{ flexDirection: "column" }}>
-            <img
               src={Passlock}
               width="75px"
               height="75px"
@@ -172,7 +149,35 @@ const Icons = () => {
             />
             <p> &nbsp;&nbsp;Passlock</p>
           </div>
-        </button>
+        </button> */}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          style={{
+            backgroundColor: "Transparent",
+            border: "none",
+            cursor: "pointer",
+            outline: "none",
+            color: "green",
+            textDecoration: "none",
+            fontWeight: "bold",
+            marginRight: "1.5%",
+            marginLeft: "50%",
+          }}
+          
+          href="https://ztmnasa.netlify.app/"
+        target="_blank"
+        >
+          <div style={{ flexDirection: "column" }}>
+            <img
+              src={NASA}
+              width="75px"
+              height="75px"
+              style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
+              class="Icons-animation"
+            />
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NASA</p>
+          </div>
+        </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a
           style={{
@@ -196,7 +201,7 @@ const Icons = () => {
               style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
               class="Icons-animation"
             />
-            <p>&nbsp;Weather</p>
+            <p>&nbsp;&nbsp;&nbsp;Weather</p>
           </div>
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -217,12 +222,13 @@ const Icons = () => {
           <div style={{ flexDirection: "column" }}>
             <img
               src={notes}
+              
               width="75px"
               height="75px"
               style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
               class="Icons-animation"
             />
-            <p> ToDoApp</p>
+            <p> &nbsp;&nbsp;ToDoApp</p>
           </div>
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -248,7 +254,7 @@ const Icons = () => {
               style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
               class="Icons-animation"
             />
-            <p> &nbsp;&nbsp;&nbsp;Music</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music</p>
           </div>
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -274,7 +280,7 @@ const Icons = () => {
               style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
               class="Icons-animation"
             />
-            <p> Chat App</p>
+            <p> &nbsp;&nbsp;Chat App</p>
           </div>
         </a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -326,7 +332,7 @@ const Icons = () => {
               style={{ borderRadius: "15px", boxShadow: "0 0 10px #000" }}
               class="Icons-animation"
             />
-            <p> &nbsp;&nbsp;Games</p>
+            <p> &nbsp;&nbsp;&nbsp;&nbsp;Games</p>
           </div>
         </a>
       </div>

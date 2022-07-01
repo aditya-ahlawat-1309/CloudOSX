@@ -8,8 +8,6 @@ import BlogPage from "./components/BlogPage";
 import MySkillsPage from "./components/MySkillsPage";
 import WorkPage from "./components/WorkPage";
 import {Route, Switch} from "react-router"
-import Login from "./Authentication/Login"
-import Register from "./Authentication/Register"
 const App = () => {
   return (
     <div>
@@ -21,12 +19,6 @@ const App = () => {
           <Route path="/blog" component={BlogPage} />
           <Route path="/skills" component={MySkillsPage} />
           <Route path="/work" component={WorkPage} />
-          <Route exact path="/signin">
-            <Login/>
-          </Route>
-          <Route exact path="/register">
-            <Register />
-          </Route>
         </Switch>
       </ThemeProvider>
     </div>
