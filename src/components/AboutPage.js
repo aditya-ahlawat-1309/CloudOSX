@@ -89,7 +89,7 @@ const AboutPage = () => {
                           className={classes.img}
                           alt="complex"
                           src={avatar}
-                          style={{ width: "450px", marginLeft: "30rem" }}
+                          style={{ width: "450px", marginLeft: "35.35%" }}
                         />
                       </ButtonBase>
                     </Grid>
