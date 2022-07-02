@@ -150,7 +150,7 @@ const Icons = () => {
             <p> &nbsp;&nbsp;Passlock</p>
           </div>
         </button> */}
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
         <a
           style={{
             backgroundColor: "Transparent",
