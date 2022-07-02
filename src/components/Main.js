@@ -267,13 +267,13 @@ const Main = () => {
           </motion.h2>
         </Contact>
 
-        <Blog to="#">
+        <Blog to="/about">
           <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             Blog
           </motion.h2>
         </Blog>
 
-        <Work to="#" click={click}>
+        <Work to="/about" click={click}>
           <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             Work
           </motion.h2>
@@ -286,7 +286,7 @@ const Main = () => {
             </motion.h2>
           </About>
 
-          <Skill to="#">
+          <Skill to="/about">
             <motion.h2 whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               My Skills.
             </motion.h2>
