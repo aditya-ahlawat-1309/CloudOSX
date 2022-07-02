@@ -214,7 +214,7 @@ const Main = () => {
             style={{
               position: "absolute",
               top: "10%",
-              left: "44.5%",
+              left: "44.15%",
               color: "white",
               zIndex: "10",
             }}
