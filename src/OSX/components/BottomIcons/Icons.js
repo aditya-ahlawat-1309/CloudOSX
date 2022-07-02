@@ -22,7 +22,7 @@ const Icons = () => {
         style={{
           position: "absolute",
           bottom: "1%",
-          marginLeft: "7.5%",
+          marginLeft: "28%",
           zIndex: 1,
           display: "flex",
           color: "white",
@@ -161,7 +161,7 @@ const Icons = () => {
             textDecoration: "none",
             fontWeight: "bold",
             marginRight: "1.5%",
-            marginLeft: "50%",
+            //marginLeft: "50%",
           }}
           
           href="https://ztmnasa.netlify.app/"
