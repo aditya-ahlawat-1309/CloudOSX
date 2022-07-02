@@ -78,6 +78,12 @@ const AboutPage = () => {
             >
               Hy, I'm A D I T Y A
             </div>
+<img
+              className={classes.img}
+              alt="complex"
+              src={avatar}
+              style={{ width: "450px", marginLeft: "32.5%" }}
+            />
             {/* </Typography> */}
             <Grid container spacing={2}>
               <Grid item xs={12} sm container>
@@ -85,12 +91,7 @@ const AboutPage = () => {
                   <Grid item xs>
                     <Grid item>
                       <ButtonBase className={classes.image}>
-                        <img
-                          className={classes.img}
-                          alt="complex"
-                          src={avatar}
-                          style={{ width: "450px", marginLeft: "100.35%" }}
-                        />
+                        
                       </ButtonBase>
                     </Grid>
                     <br />
