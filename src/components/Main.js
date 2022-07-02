@@ -220,6 +220,8 @@ const Main = () => {
             }}
           >
             Mac OS 
+            <br/>
+                Click on
           </h2>
           <h2
             style={{
@@ -231,6 +233,8 @@ const Main = () => {
             }}
           >
              X Start
+             <br/>
+                 Power Button
           </h2>
         </div>
         <LogoComponent theme={click ? "dark" : "light"} />
